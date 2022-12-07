@@ -2,8 +2,8 @@
 <img src="https://cdn.discordapp.com/attachments/1049746882336923669/1049746919334891542/8936636f-1d8f-433c-9645-c733ed9168b0.png" style="width: 200px;">
 <h2>Contacts</h2>
 <ul> 
-  <li>Telegram: @veronikaold </li>
-  <li>Email: starenkaya.veronika@gmail.com </li>
+  <li>Telegram: @veronikaold</li>
+  <li>Email: starenkaya.veronika@gmail.com</li>
   <li>Discord global: veronika#2415 (rs-school server:Veronika (@veronika447))</li>
 </ul>
 <h2>About me</h2>

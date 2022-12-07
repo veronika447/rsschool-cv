@@ -22,7 +22,7 @@
 <ul> 
   <li>
     <code>function multiply(a, b){ return a * b }</code>
-</li>
+  </li>
 </ul>
 <h2>Work experience</h2>
 <ul> 

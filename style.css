@@ -7,7 +7,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red;*/
 }
 
 html {
@@ -16,6 +15,7 @@ html {
 
 header {
     background-color: #829985;
+    height: 70px;
 }
 
 .nav-list {
@@ -27,7 +27,6 @@ header {
 
 .nav-link {
     padding: 0 20px;
-    line-height: 70px;
     transition: .3s;
     cursor: pointer;
 }
@@ -59,20 +58,51 @@ body {
     padding: 10px;
 }
 
+.section-item {
+    position: relative;
+    padding-left: 25px;
+}
+
+.section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #829985;
+    border-radius: 3px;
+}
+
+ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
 .my_info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 13px solid;
+    border-bottom-color: #bdb7ab;
+    padding: 20px 0;
+}
 
+.social-link {
+    text-decoration: none;
+    color: #829985;
+    transition-color: 0.5s;
+}
+
+.social-link:hover {
+    color: #4d2323;
 }
 
 .general_info {
     display: flex;
     flex-wrap: wrap;
-}
-
-.section {
-    width: 50%;
+    justify-content: center;
 }
 
 .main-title {
@@ -81,7 +111,22 @@ body {
     text-transform: uppercase;
     letter-spacing: 5px;
     color: #4d2323;
+    position: relative;
+    margin-bottom: 20px;
+}
 
+.main-title::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    height: 2.5px;
+    width: 200px;
+    background-color: #829985;
+    border-radius: 2px;
+    margin-top: 10px;
 }
 
 .section-title {
@@ -93,9 +138,22 @@ body {
 }
 
 .avatar {
-    width: 150px;
-    border-radius: 500px;
+    width: 250px;
+    border-radius: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
 
+.general_info section {
+    border-bottom-color: #4d2323;
+    border-bottom-style: solid;
+    margin: 20px;
+    padding: 10px 0 20px 0;
+    width: 45%;
+}
+
+.general_info section:nth-last-child(-n+2) {
+    border: none;
 }
 
 footer {
@@ -112,7 +170,6 @@ footer {
     color: #eaf0ed;
     text-decoration: none;
     transition: color 0.5s;
-
 }
 
 .link-github:hover {
@@ -121,11 +178,10 @@ footer {
 
 .logo {
     width: 100px;
-
 }
 
 @media (max-width: 768px) {
     .section {
-        width: 100%;
+        width: max-content;
     }
 }
